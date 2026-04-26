@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <td>First Name</td>
+      <td><input type="text" name="fname" required></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" name="lname" required></td>
+    </tr>
+    <tr>
+      <td>Date of Birth</td>
+      <td><input type="date" name="dob" required></td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td><textarea name="address" rows="3" required></textarea></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </td>
+    </tr>
+    <tr>
+      <td>Courses</td>
+      <td>
+        <select name="course" required>
+          <option value="">--Select--</option>
+          <option value="bca">BCA</option>
+          <option value="bcom">B.Com</option>
+          <option value="btech">B.Tech</option>
+          <option value="mba">MBA</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Subject</td>
+      <td><input type="text" name="subject" required></td>
+    </tr>
+    <tr>
+      <td>Email ID</td>
+      <td><input type="email" name="email" required></td>
+    </tr>
+    <tr>
+      <td>Phone Number</td>
+      <td><input type="tel" name="phone" pattern="[0-9]{10}" required></td>
+    </tr>
+    <tr>
+      <td>Upload File</td>
+      <td><input type="file" name="file"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Submit">
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

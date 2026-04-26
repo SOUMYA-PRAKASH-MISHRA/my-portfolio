@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width", initial-scale="1.0"> 
+<title>Event handeler</title>
+<style>
+    div{
+        margin-top: 10px;
+        padding: 10px;
+        height: 10px;
+        width: 90px;
+        text-align: center;
+        background-color: wheat;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+    <body>
+        Enter Your Name:
+        <input type="text" id="name" size="10" oninput="Uppercase()"><br><br>
+        Enter Your Hobby:
+        <input type="text" id="hobby" size="10" onchange="Uppercase2()">
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)">Submit</div>
+        <div>Click Me</div>
+        <script>
+        function Uppercase(){
+        let text=document.getElementById("name").value;
+        document.getElementById("name").value=text.toUpperCase();
+        }
+        function Uppercase2(){
+        let text=document.getElementById("hobby").value;
+        document.getElementById("hobby").value=text.toUpperCase();
+        }
+        function mOver(obj){
+            obj.innnerHTML="Click Me";
+            obj.style.backgroundColor="red";
+        }
+        function mOut(obj){
+            obj.innnerHTML="Submit";
+            obj.style.backgroundColor="wheat";
+        }
+        </script>
+     </body>
+</html>

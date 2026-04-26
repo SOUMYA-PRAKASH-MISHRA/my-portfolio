@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All CSS Effects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .box-container {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Pulse Effect */
+        .pulse-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 30%;
+            margin: 0 auto;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.6; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Spin Effect */
+        .spin-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 30%;
+            margin: 0 auto;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Bounce Effect */
+        .bounce-box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 30%;
+            margin: 0 auto;
+            animation: bounce 1.2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+        /* Fade Effect */
+        .fade-box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 30%;
+            margin: 0 auto;
+            animation: fade 2s infinite;
+        }
+
+        @keyframes fade {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Color Shift Effect */
+        .color-shift-box {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            border-radius: 30%;
+            margin: 0 auto;
+            animation: colorShift 6s ease infinite;
+        }
+
+        @keyframes colorShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Slide Effect */
+        .slide-box {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 30%;
+            margin: 0 auto;
+            animation: slide 2s ease-in-out infinite;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pulse Effect Box -->
+    <div class="box-container">
+        <h2>Pulse Effect</h2>
+        <div class="pulse-box"></div>
+    </div>
+
+    <!-- Spin Effect Box -->
+    <div class="box-container">
+        <h2>Spin Effect</h2>
+        <div class="spin-box"></div>
+    </div>
+
+    <!-- Bounce Effect Box -->
+    <div class="box-container">
+        <h2>Bounce Effect</h2>
+        <div class="bounce-box"></div>
+    </div>
+
+    <!-- Fade Effect Box -->
+    <div class="box-container">
+        <h2>Fade Effect</h2>
+        <div class="fade-box"></div>
+    </div>
+
+    <!-- Color Shift Effect Box -->
+    <div class="box-container">
+        <h2>Color Shift Effect</h2>
+        <div class="color-shift-box"></div>
+    </div>
+
+    <!-- Slide Effect Box -->
+    <div class="box-container">
+        <h2>Slide Effect</h2>
+        <div class="slide-box"></div>
+    </div>
+
+</body>
+</html>

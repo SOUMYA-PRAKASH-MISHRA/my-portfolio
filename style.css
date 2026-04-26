@@ -1,0 +1,129 @@
+:root {
+  --bg:#fff;
+  --text:#222;
+  --primary:#007bff;
+}
+
+body.dark {
+  --bg:#121212;
+  --text:#eee;
+  --primary:#00adb5;
+}
+
+body {
+  margin:0;
+  font-family:Arial;
+  background:var(--bg);
+  color:var(--text);
+  transition:0.3s;
+}
+
+header {
+  background:var(--primary);
+  padding:15px;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav ul {
+  display:flex;
+  list-style:none;
+}
+
+nav ul li {
+  margin:0 10px;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+}
+
+.section {
+  padding:70px 20px;
+  text-align:center;
+}
+
+.hero span {
+  color:var(--primary);
+}
+
+.btn {
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+}
+
+/* Skills */
+.skill {
+  margin:15px auto;
+  width:60%;
+  text-align:left;
+}
+
+.bar {
+  background:#ccc;
+  height:8px;
+  border-radius:5px;
+}
+
+.bar div {
+  height:100%;
+  background:var(--primary);
+}
+
+/* Projects */
+.projects {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  width:250px;
+  padding:20px;
+  margin:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-8px);
+  background:var(--primary);
+  color:white;
+}
+
+/* Form */
+form {
+  display:flex;
+  flex-direction:column;
+  width:300px;
+  margin:auto;
+}
+
+input, textarea {
+  margin:10px 0;
+  padding:10px;
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  padding:10px;
+}
+
+/* Typing cursor */
+#typing {
+  border-right:2px solid;
+  padding-right:5px;
+}

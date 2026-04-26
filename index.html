@@ -2,89 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Soumya Prakash Mishra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumya Prakash Mishra · animated portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Your CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Soumya Prakash Mishra</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="themeToggle">🌙</button>
+  <div class="bg-orb"></div>
+  <div class="bg-orb2"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Soumya Prakash Mishra</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#extra-projects">More</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
-</header>
 
-<section id="home" class="section hero">
-  <h1>Hi, I'm <span>Soumya Prakash Mishra</span></h1>
-  <h2><span id="typing"></span></h2>
-  <a href="resume.pdf" download class="btn">Download Resume</a>
-</section>
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero">
+      <div class="hero-content">
+        <span class="greet"><i class="fas fa-code"></i> full-stack & AI enthusiast</span>
+        <div class="name">Soumya Prakash Mishra</div>
+        <div class="tagline">Python · Web Design · AJS</div>
+        <p class="hero-desc">
+          I craft intelligent, animated web experiences with Python and modern JavaScript.
+        </p>
 
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>I am a B.Tech Computer Science (AI/ML) student with a growing passion for web development. I specialize in building responsive websites using HTML, CSS, and JavaScript. I done my first internship in internPe and now i doing my second internship currently at Thiranex, I am gaining hands-on experience and continuously improving my technical skills. I am eager to apply my knowledge to real-world projects and grow as a developer.</p>
-</section>
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-outline">Say Hello</a>
+        </div>
+      </div>
 
-<section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skill">
-    <p>HTML</p><div class="bar"><div style="width:95%"></div></div>
-  </div>
-  <div class="skill">
-    <p>CSS</p><div class="bar"><div style="width:90%"></div></div>
-  </div>
-  <div class="skill">
-    <p>JavaScript</p><div class="bar"><div style="width:85%"></div></div>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Modern responsive portfolio</p>
-      <a href="https://soumya-prakash-mishra.github.io/my-portfolio/">Live Demo</a>
+      <div class="hero-avatar">
+        <div class="avatar-box">
+          <img src="logotech.jpg" class="profile-photo">
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h3>E-commerce Site</h3>
-      <p>Full stack project</p>
-      <a href="https://soumya-prakash-mishra.github.io/SoMu_Shop/">Live Demo</a>
-    </div>
-     <div class="card">
-      <h3>calculator</h3>
-      <p>web development</p>
-      <a href="https://soumya-prakash-mishra.github.io/calculator/">Live Demo</a>
-    </div>
-     <div class="card">
-      <h3>to do list</h3>
-      <p>web development</p>
-      <a href="https://soumya-prakash-mishra.github.io/to-do-list/">Live Demo</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <form id="contactForm">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button class="btn">Send</button>
-  </form>
-</section>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">technical power</h2>
 
-<footer>
-  <p>© 2026 Soumya Prakash Mishra</p>
-</footer>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+      <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+      <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+      <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
+      <div class="skill-card"><i class="fab fa-node"></i><span>Node.js</span></div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- ORIGINAL PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">featured projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>SentimentScope AI</h3>
+        <p>AI based sentiment analyzer</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Immersive Studio</h3>
+        <p>Creative web design project</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ NEW ADDED PROJECT SECTION -->
+  <section id="extra-projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Modern responsive portfolio</p>
+        <a href="https://soumya-prakash-mishra.github.io/my-portfolio/" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="card">
+        <h3>E-commerce Site</h3>
+        <p>Full stack project</p>
+        <a href="https://soumya-prakash-mishra.github.io/SoMu_Shop/" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="card">
+        <h3>Calculator</h3>
+        <p>Web development</p>
+        <a href="https://soumya-prakash-mishra.github.io/calculator/" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="card">
+        <h3>To Do List</h3>
+        <p>Web development</p>
+        <a href="https://soumya-prakash-mishra.github.io/to-do-list/" target="_blank">Live Demo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">connect</h2>
+
+    <div class="social-links">
+      <a href="https://github.com/SOUMYA-PRAKASH-MISHRA"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/soumya-prakash-mishra-8b3174355?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <p>soumya.s@portfolio.dev</p>
+  </section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
